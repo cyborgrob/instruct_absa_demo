@@ -53,4 +53,4 @@ iface = gr.Interface(fn=lambda x: model_predict(preprocess_input(x)),
                      description="This app will take a sample review segment as input and return the extracted aspects and the corresponding sentiments.",
                      article="This model is a fine-tuned version of the original SOTA model found here: https://huggingface.co/kevinscaria/joint_tk-instruct-base-def-pos-neg-neut-combined",
                      )
-iface.launch()
+iface.launch(share=True)
